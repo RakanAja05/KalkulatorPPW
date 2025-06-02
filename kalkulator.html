@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalkulator Postfix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Kalkulator</h2>
+  <input type="text" id="input" placeholder="Masukkan ekspresi (cth: 3 + 4 * 2)">
+  <br>
+  <button onclick="hitung()">Hitung</button>
+
+  <div class="result" id="hasil"></div>
+
+  <script src="kalkulator.js"></script>
+</body>
+</html>
